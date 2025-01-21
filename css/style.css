@@ -296,40 +296,21 @@ iframe.juxtapose {
     text-align: center;
 }
 
-/* New CSS for Resizable Avoidance and Follow Curves Image Blocks */
+/* Updated CSS for Resizable Avoidance and Follow Curves Image Blocks */
 
-/* Avoidance Feature */
+/* Fixed size for Avoidance Feature */
 .addon.avoidance .icol img {
-    width: 10%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 200px; /* Optional: set a maximum width */
-    transition: width 0.3s ease; /* Smooth transition on resize */
+    width: 40px; /* Set fixed width */
+    height: auto; /* Set fixed height */
 }
 
-/* Follow Curves Feature */
+/* Fixed size for Follow Curves Feature */
 .addon.follow-curve .icol img {
-    width: 10%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 200px; /* Optional: set a maximum width */
-    transition: width 0.3s ease; /* Smooth transition on resize */
+    width: 40px; /* Set fixed width */
+    height: auto; /* Set fixed height */
 }
 
-/* Optional: Responsive Adjustments */
-@media (max-width: 768px) {
-    .addon.avoidance .icol img,
-    .addon.follow-curve .icol img {
-        width: 100%;
-        max-width: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-    .addon.avoidance .icol img,
-    .addon.follow-curve .icol img {
-        width: 100%;
-        max-width: 120px;
-    }
-}
+/* Removed responsive adjustments for arrow images */
 
 /* New CSS for Easy-Animations Text Color */
 .easy-animations {
@@ -381,16 +362,7 @@ iframe.juxtapose {
     text-align: left;
 }
 
-/* Responsive Adjustments for SUMMARY Section */
-@media (max-width: 768px) {
-    .summary-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .summary-list {
-        margin-right: 0;
-    }
-}
+/* Removed the media query to prevent layout changes on narrow widths */
 
 /* New CSS for Rounded Box */
 .rounded-box {
@@ -412,8 +384,8 @@ iframe.juxtapose {
 }
 
 .image-row img {
-    width: 375px; /* Set desired width */
-    height: 375px; /* Set desired height */
+    width: 300px; /* Set desired width */
+    height: 300px; /* Set desired height */
     object-fit: cover; /* Ensure the image covers the area without distortion */
     border: 4px solid #ffffff; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Rounded corners */
